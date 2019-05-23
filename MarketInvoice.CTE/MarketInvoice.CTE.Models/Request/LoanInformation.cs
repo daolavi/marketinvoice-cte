@@ -2,7 +2,6 @@
 using MarketInvoice.CTE.Validations;
 using Newtonsoft.Json;
 
-
 namespace MarketInvoice.CTE.Models.Request
 {
     public class LoanInformation
