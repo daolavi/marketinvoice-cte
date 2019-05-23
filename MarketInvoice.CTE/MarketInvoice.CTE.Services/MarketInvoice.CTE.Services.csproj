@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MarketInvoice.CTE.Models\MarketInvoice.CTE.Models.csproj" />
+  </ItemGroup>
+
 </Project>

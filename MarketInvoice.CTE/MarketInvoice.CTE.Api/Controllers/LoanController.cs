@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MarketInvoice.CTE.Models.Request;
+using MarketInvoice.CTE.Services.LoanService;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MarketInvoice.CTE.Api.Controllers
 {
@@ -6,22 +8,27 @@ namespace MarketInvoice.CTE.Api.Controllers
     [Route("api/[controller]")]
     public class LoanController
     {
-        public LoanController()
+        private readonly ILoanService _loanService;
+
+        public LoanController(ILoanService loanService)
         {
+            _loanService = loanService;
         }
 
         [HttpGet]
         [Route("loansummary")]
-        public IActionResult LoanSummary()
+        public IActionResult LoanSummary([FromQuery] LoanInformation loanInformation)
         {
-            return new JsonResult("Ok");
+            var result = _loanService.GetLoanSummary(loanInformation);
+            return new JsonResult(result);
         }
 
         [HttpGet]
         [Route("repaymentSchedule")]
-        public IActionResult RepaymentSchedule()
+        public IActionResult RepaymentSchedule([FromQuery] LoanInformation loanInformation)
         {
-            return new JsonResult("Ok");
+            var result = _loanService.GetRepaymentSchedule(loanInformation);
+            return new JsonResult(result);
         }
     }
 }
