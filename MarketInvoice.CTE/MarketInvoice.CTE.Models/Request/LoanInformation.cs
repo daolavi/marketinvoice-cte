@@ -1,13 +1,17 @@
-﻿using Newtonsoft.Json;
+﻿using MarketInvoice.CTE.Constants;
+using Newtonsoft.Json;
 
 namespace MarketInvoice.CTE.Models.Request
 {
     public class LoanInformation
     {
         [JsonProperty("amount")]
-        public double Amount { get; set; }
+        public decimal Amount { get; set; }
 
         [JsonProperty("apr")]
-        public double APR { get; set; }
+        public decimal APR { get; set; }
+
+        [JsonProperty("numberOfPayments")]
+        public int NumberOfPayments { get; set; } = PaymentConstants.WEEKLY;
     }
 }

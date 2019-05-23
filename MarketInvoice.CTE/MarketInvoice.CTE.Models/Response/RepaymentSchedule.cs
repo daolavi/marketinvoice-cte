@@ -6,6 +6,6 @@ namespace MarketInvoice.CTE.Models.Response
     public class RepaymentSchedule
     {
         [JsonProperty("installments")]
-        public List<Installment> InstallmentDetails { get; set; }
+        public List<Installment> Installments { get; set; }
     }
 }

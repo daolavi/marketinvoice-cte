@@ -8,12 +8,12 @@ namespace MarketInvoice.CTE.Models.Response
         public int InstallmentNumber { get; set; }
 
         [JsonProperty("amountDue")]
-        public double AmountDue { get; set; }
+        public decimal AmountDue { get; set; }
 
         [JsonProperty("principal")]
-        public double Principal { get; set; }
+        public decimal Principal { get; set; }
 
         [JsonProperty("interest")]
-        public double Interest { get; set; }
+        public decimal Interest { get; set; }
     }
 }
