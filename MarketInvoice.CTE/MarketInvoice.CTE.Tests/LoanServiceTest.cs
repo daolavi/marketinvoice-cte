@@ -91,7 +91,7 @@ namespace MarketInvoice.CTE.Tests
         }
 
         [Fact]
-        public void RepaymentScheduleTest_With_MonthlyPaymen()
+        public void RepaymentScheduleTest_With_MonthlyPayment()
         {
             var loanInformation = new LoanInformation()
             {
