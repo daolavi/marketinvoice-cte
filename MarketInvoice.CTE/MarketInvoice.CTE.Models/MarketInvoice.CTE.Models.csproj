@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MarketInvoice.CTE.Constants\MarketInvoice.CTE.Constants.csproj" />
+    <ProjectReference Include="..\MarketInvoice.CTE.Validations\MarketInvoice.CTE.Validations.csproj" />
   </ItemGroup>
 
 </Project>

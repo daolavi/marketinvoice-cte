@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketInvoice.CTE.Services"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketInvoice.CTE.Helpers", "MarketInvoice.CTE.Helpers\MarketInvoice.CTE.Helpers.csproj", "{1D15AEFC-3BA8-48FE-BD39-1C436C6999F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketInvoice.CTE.Validations", "MarketInvoice.CTE.Validations\MarketInvoice.CTE.Validations.csproj", "{1D391173-6158-432D-A5A0-5BF29613A7CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1D15AEFC-3BA8-48FE-BD39-1C436C6999F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D15AEFC-3BA8-48FE-BD39-1C436C6999F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D15AEFC-3BA8-48FE-BD39-1C436C6999F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D391173-6158-432D-A5A0-5BF29613A7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D391173-6158-432D-A5A0-5BF29613A7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D391173-6158-432D-A5A0-5BF29613A7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D391173-6158-432D-A5A0-5BF29613A7CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
